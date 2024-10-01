@@ -1,9 +1,11 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
+import 'package:news_app/ui/home.dart';
 import 'package:news_app/ui/search_tab.dart';
 import '../models/category_model.dart';
 import '../repo/repo.dart';
 import 'drawer_widget.dart';
+
 
 class SettingsScreen extends StatefulWidget {
    const SettingsScreen({super.key});
@@ -30,7 +32,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           drawer:DrawerWidget(OnClick: onDrawerClick),
       backgroundColor: Colors.transparent,
       appBar: AppBar(
-        leading:   IconButton(onPressed: (){Navigator.pop(context);}, icon: Icon(Icons.arrow_back)),
+        leading:   IconButton(onPressed: (){Navigator.pushNamed(context, HomeScreen.routeName);}, icon: Icon(Icons.arrow_back)),
       actions: [
       IconButton(onPressed: (){showSearch(context: context, delegate: SearchTab(repo));}, icon: Icon(Icons.search))
       ],
@@ -42,7 +44,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       centerTitle: true,
       iconTheme: IconThemeData(color: Colors.white),
       title: Text(
-      "News App",
+      "NewsNest",
       style: TextStyle(
       fontSize: 30, color: Colors.white, fontWeight: FontWeight.w400),
       ),

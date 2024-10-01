@@ -13,9 +13,10 @@ static const int Category_Id =1 ;
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-        Container(height: 200,
+        Container(
+          height: 200,
         color: Colors.green,
-        child: Text("News App",style: TextStyle(color: Colors.white,fontSize: 30),),
+        child: Text("NewsNest",style: TextStyle(color: Colors.white,fontSize: 30),),
         alignment: Alignment.center,),
           SizedBox(height: 20,),
         InkWell(

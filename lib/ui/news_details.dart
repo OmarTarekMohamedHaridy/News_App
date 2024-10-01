@@ -27,7 +27,7 @@ class NewsDetails extends StatelessWidget {
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.white),
         title: Text(
-          "News App",
+          "NewsNest",
           style: TextStyle(
               fontSize: 30, color: Colors.white, fontWeight: FontWeight.w400),
         ),
