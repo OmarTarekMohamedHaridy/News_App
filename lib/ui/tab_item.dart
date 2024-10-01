@@ -11,8 +11,8 @@ class TabItem extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 14,vertical: 6),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25),
-            border: Border.all(color: Colors.green),
-            color: isSelected ? Colors.green : Colors.transparent),
-        child: Text(source.name ?? "",style: TextStyle(fontSize: 18,color: isSelected ? Colors.white : Colors.green),));
+            border: Border.all(color: Colors.redAccent),
+            color: Colors.redAccent),
+        child: Text(source.name ?? "",style: TextStyle(fontSize: 18,color: isSelected ? Colors.black : Colors.white),));
   }
 }

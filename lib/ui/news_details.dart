@@ -19,7 +19,7 @@ class NewsDetails extends StatelessWidget {
         actions: [
 
         ],
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.redAccent,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(25),

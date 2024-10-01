@@ -15,8 +15,8 @@ static const int Category_Id =1 ;
         children: [
         Container(
           height: 200,
-        color: Colors.green,
-        child: Text("NewsNest",style: TextStyle(color: Colors.white,fontSize: 30),),
+        color: Colors.white,
+        child: Image.asset("assets/newsNest.jpg", width: double.infinity,fit: BoxFit.fill,),
         alignment: Alignment.center,),
           SizedBox(height: 20,),
         InkWell(

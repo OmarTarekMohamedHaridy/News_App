@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
           actions: [
             IconButton(onPressed: (){showSearch(context: context, delegate: SearchTab(repo));}, icon: Icon(Icons.search))
           ],
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.redAccent,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(25),
